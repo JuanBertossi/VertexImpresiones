@@ -35,7 +35,7 @@
 .g-tag {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
-  color: var(--color-accent);
+  color: var(--color-accent-text);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }

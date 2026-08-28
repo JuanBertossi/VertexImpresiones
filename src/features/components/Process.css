@@ -14,8 +14,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--color-accent-ink);
-  background: var(--color-accent);
+  color: var(--color-ink);
+  background: var(--color-brand-cyan);
   width: 22px;
   height: 22px;
   display: flex;

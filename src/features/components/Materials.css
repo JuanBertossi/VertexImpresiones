@@ -22,8 +22,8 @@
 .mat-card h3 code {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
-  color: var(--color-accent);
-  background: var(--color-accent-soft);
+  color: var(--color-brand-cyan);
+  background: var(--color-brand-gray);
   padding: 3px 7px;
   border-radius: var(--radius);
   font-weight: 500;
@@ -58,8 +58,8 @@
   height: 30px;
   padding: 0 14px;
   border-radius: 15px;
-  border: 1px dashed var(--color-accent);
-  color: var(--color-accent);
+  border: 1px dashed var(--color-accent-text);
+  color: var(--color-accent-text);
   font-family: 'JetBrains Mono', monospace;
   font-size: 12px;
   display: inline-flex;

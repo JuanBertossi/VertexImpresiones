@@ -1,13 +1,13 @@
 .reviews {
-  background: var(--color-ink);
+  background: var(--color-brand-gray);
   color: var(--color-paper);
   border-bottom: none;
 }
 .reviews .eyebrow {
-  color: #a6abb4;
+  color: var(--color-brand-cyan);
 }
 .reviews .eyebrow::before {
-  background: #a6abb4;
+  background: var(--color-brand-cyan);
 }
 .reviews .mat-grid {
   gap: 20px;

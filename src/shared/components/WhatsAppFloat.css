@@ -6,8 +6,8 @@
   bottom: calc(var(--wa-bottom) + env(safe-area-inset-bottom, 0px));
   width: 58px;
   height: 58px;
-  background: var(--color-ink);
-  border: 1px solid var(--color-ink);
+  background: var(--color-brand-gray);
+  border: 1px solid var(--color-brand-gray);
   border-radius: var(--radius);
   display: flex;
   align-items: center;
@@ -37,16 +37,16 @@
 .wa-float svg {
   width: 29px;
   height: 29px;
-  fill: var(--color-accent);
+  fill: var(--color-brand-cyan);
   flex: none;
   transition: fill 0.2s ease;
 }
 .wa-float:hover {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
+  background: var(--color-brand-cyan);
+  border-color: var(--color-brand-cyan);
 }
 .wa-float:hover svg {
-  fill: #fff;
+  fill: var(--color-ink);
 }
 .wa-float:active {
   transform: translateY(0) scale(0.94);
