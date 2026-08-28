@@ -20,16 +20,16 @@ export function Contact() {
             Respondo por WhatsApp de 9 a 21, todos los días. Trabajo en Córdoba y alrededores, y
             envío a todo el país.
           </p>
+          <a
+            className="btn-primary contact-whatsapp"
+            href={getWhatsAppLink('Hola Vertex! Vi la página y quería hacer una consulta.')}
+            target="_blank"
+            rel="noopener"
+          >
+            Escribir por WhatsApp →
+          </a>
+
           <div className="contact-links">
-            <a
-              className="clink"
-              href={getWhatsAppLink('Hola Vertex! Vi la página y quería hacer una consulta.')}
-              target="_blank"
-              rel="noopener"
-            >
-              <span>WhatsApp</span>
-              <span>+54 9 3573 45-1757 →</span>
-            </a>
             <a
               className="clink"
               href="https://www.instagram.com/vertex.3d_"

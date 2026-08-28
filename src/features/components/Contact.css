@@ -15,6 +15,10 @@
   margin-bottom: 26px;
   max-width: 420px;
 }
+.contact-whatsapp {
+  width: 100%;
+  margin-bottom: 20px;
+}
 .contact-links {
   display: flex;
   flex-direction: column;
