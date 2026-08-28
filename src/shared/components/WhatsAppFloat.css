@@ -1,0 +1,66 @@
+.wa-float {
+  position: fixed;
+  right: 20px;
+  z-index: 80;
+  --wa-bottom: 22px;
+  bottom: calc(var(--wa-bottom) + env(safe-area-inset-bottom, 0px));
+  width: 58px;
+  height: 58px;
+  background: var(--color-ink);
+  border: 1px solid var(--color-ink);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 26px rgba(21, 23, 27, 0.26);
+  opacity: 0;
+  transform: translateY(14px);
+  animation: waIn 0.45s ease 0.35s forwards;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
+}
+@keyframes waIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wa-float {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+.wa-float svg {
+  width: 29px;
+  height: 29px;
+  fill: var(--color-accent);
+  flex: none;
+  transition: fill 0.2s ease;
+}
+.wa-float:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.wa-float:hover svg {
+  fill: #fff;
+}
+.wa-float:active {
+  transform: translateY(0) scale(0.94);
+}
+
+@media (max-width: 520px) {
+  .wa-float {
+    right: 16px;
+    width: 54px;
+    height: 54px;
+    --wa-bottom: 18px;
+  }
+  .wa-float svg {
+    width: 27px;
+    height: 27px;
+  }
+}

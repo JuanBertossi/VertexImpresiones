@@ -1,0 +1,39 @@
+.faq {
+  border-top: 1px solid var(--color-grid);
+}
+.faq details {
+  border-bottom: 1px solid var(--color-grid);
+  background: var(--color-card);
+}
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 22px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 16.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq summary::after {
+  content: '+';
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 19px;
+  color: var(--color-accent);
+  flex: none;
+  transition: transform 0.2s ease;
+}
+.faq details[open] summary::after {
+  transform: rotate(45deg);
+}
+.faq details p {
+  padding: 0 22px 22px;
+  color: var(--color-muted);
+  font-size: 14.5px;
+  max-width: 760px;
+}
