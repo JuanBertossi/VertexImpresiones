@@ -23,7 +23,18 @@
 
 @media (max-width: 520px) {
   .trust {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+  .trust-item {
     flex-direction: column;
-    gap: 14px;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .trust-num {
+    font-size: 20px;
+  }
+  .trust-label {
+    display: none;
   }
 }

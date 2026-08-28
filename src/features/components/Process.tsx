@@ -27,7 +27,8 @@ export function Process() {
         </Reveal>
         <Reveal className="process">
           {STEPS.map((step, i) => (
-            <div className="p-step" data-n={i + 1} key={step.title}>
+            <div className="p-step" key={step.title}>
+              <span className="p-dot">{i + 1}</span>
               <h3>{step.title}</h3>
               <p>{step.desc}</p>
             </div>

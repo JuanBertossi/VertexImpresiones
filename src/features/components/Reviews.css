@@ -15,6 +15,20 @@
   border: none;
 }
 
+.review-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+.star-filled {
+  fill: #f5b400;
+  stroke: #f5b400;
+}
+.star-empty {
+  fill: none;
+  stroke: var(--color-grid);
+}
+
 .review-card p {
   font-size: 15px;
   margin-bottom: 12px;

@@ -45,8 +45,7 @@ export function Gallery() {
           <div className="eyebrow">Productos</div>
           <h2>Lo que más se pide.</h2>
           <p>
-            Todo esto salió de la impresora para clientes reales. Elegí lo que más se parezca a lo
-            tuyo y escribime.
+            Salió de la impresora para clientes reales — elegí lo que más se parezca a lo tuyo.
           </p>
         </Reveal>
 

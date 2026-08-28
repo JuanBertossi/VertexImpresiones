@@ -14,15 +14,14 @@ export function Hero() {
             pieza en tus <em>manos</em>.
           </h1>
           <p className="hero-sub">
-            Repuestos que ya no se consiguen, souvenirs por cantidad, jarras con tu logo y objetos
-            de diseño. Mandás la idea por WhatsApp, te paso el presupuesto y en pocos días la
-            tenés.
+            Repuestos, souvenirs, jarras y objetos de diseño: mandás la idea por WhatsApp y en
+            pocos días la tenés.
           </p>
 
           <div className="hero-badges">
-            <span className="badge">Presupuesto sin cargo</span>
-            <span className="badge">Respuesta en el día</span>
-            <span className="badge">Envíos a todo el país</span>
+            <span className="badge badge-quote">Presupuesto sin cargo</span>
+            <span className="badge badge-response">Respuesta en el día</span>
+            <span className="badge badge-shipping">Envíos a todo el país</span>
             <span className="badge">Respondo de 9 a 21</span>
           </div>
 
