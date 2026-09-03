@@ -1,10 +1,10 @@
-import './Trust.css'
+import "./Trust.css";
 
 const STATS = [
-  { num: '24-72h', label: 'tiempo típico de entrega' },
-  { num: 'PLA · PETG', label: 'materiales disponibles' },
-  { num: '0,1 mm', label: 'precisión de capa' },
-]
+  { num: "24-72h", label: "tiempo típico de entrega" },
+  { num: "PLA · PETG", label: "materiales disponibles" },
+  { num: "0,12 mm", label: "precisión de capa" },
+];
 
 export function Trust() {
   return (
@@ -18,5 +18,5 @@ export function Trust() {
         ))}
       </div>
     </div>
-  )
+  );
 }

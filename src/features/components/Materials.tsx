@@ -1,5 +1,6 @@
 import { Reveal } from '@/shared/components/Reveal'
 import './Materials.css'
+import coloresImg from '@/shared/assets/Colores.jpeg'
 
 const MATERIALS = [
   {
@@ -19,21 +20,6 @@ const MATERIALS = [
   },
 ]
 
-const COLORS = [
-  { color: '#15171B', title: 'Negro' },
-  { color: '#FFFFFF', title: 'Blanco' },
-  { color: '#C9CDD2', title: 'Gris' },
-  { color: '#D62828', title: 'Rojo' },
-  { color: '#FF5A1F', title: 'Naranja' },
-  { color: '#F7C548', title: 'Amarillo' },
-  { color: '#2A9D5C', title: 'Verde' },
-  { color: '#1D6FB8', title: 'Azul' },
-  { color: '#7ED8E8', title: 'Celeste' },
-  { color: '#8B5CF6', title: 'Violeta' },
-  { color: '#E27DA8', title: 'Rosa' },
-  { color: 'linear-gradient(135deg,#B8B8B8,#EDEDED,#9A9A9A)', title: 'Plateado' },
-]
-
 export function Materials() {
   return (
     <section className="section">
@@ -44,26 +30,22 @@ export function Materials() {
           <p>Elegimos el material según para qué es la pieza. Si no sabés cuál te sirve, lo vemos juntos.</p>
         </Reveal>
 
-        <Reveal className="mat-grid">
-          {MATERIALS.map((material) => (
-            <div className="mat-card" key={material.name}>
-              <h3>
-                {material.name} <code>{material.tag}</code>
-              </h3>
-              <p>{material.desc}</p>
-            </div>
-          ))}
-        </Reveal>
-
-        <Reveal className="swatch-row">
-          <span className="swatch-note">Colores:</span>
-          <div className="swatches">
-            {COLORS.map((c) => (
-              <span className="sw" style={{ background: c.color }} title={c.title} key={c.title} />
+        <div className="materials-layout">
+          <Reveal className="materials-grid">
+            {MATERIALS.map((material) => (
+              <div className="materials-item" key={material.name}>
+                <h3>
+                  {material.name} <code>{material.tag}</code>
+                </h3>
+                <p>{material.desc}</p>
+              </div>
             ))}
-            <span className="sw-more">+ el que necesites</span>
+          </Reveal>
+
+          <div className="colores-img">
+            <img src={coloresImg} alt="Colores de impresión" />
           </div>
-        </Reveal>
+        </div>
       </div>
     </section>
   )
